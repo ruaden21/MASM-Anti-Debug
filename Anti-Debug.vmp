@@ -1,0 +1,64 @@
+{
+	"Version": 2,
+	"Project": {
+		"Name": "Anti-Debug.exe",
+		"Id": "EED8ED35-31DD-4A39-A849-311068029B1B",
+		"FileName": "C:\\Users\\LINH\\Google Drive\\LaptopHP\\repos\\MASM-Anti-Debug\\Anti-Debug.vmp",
+		"Created": "6/16/2020 10:41:57",
+		"Type": "ptWin32",
+		"PreAssembleEventCommandLine": "",
+		"AssembleEventCommandLine": "",
+		"PostAssembleEventCommandLine": "",
+		"PreLinkEventCommandLine": "",
+		"LinkEventCommandLine": "",
+		"AdditionalLinkSwitches": "",
+		"AdditionalLinkFiles": "",
+		"PostLinkEventCommandLine": "",
+		"LibraryPath": "",
+		"OutputFolder": "C:\\Users\\LINH\\Google Drive\\LaptopHP\\repos\\MASM-Anti-Debug\\",
+		"OutputFile": "\"C:\\Users\\LINH\\Google Drive\\LaptopHP\\repos\\MASM-Anti-Debug\\Release\\Anti-Debug.exe\"",
+		"SizeInBytes": 4684,
+		"Build": true
+	},
+	"Files": [
+		{
+			"Id": "4C9BA544-27EC-4523-BF25-36FA2737872B",
+			"Name": "Manifest.xml",
+			"Created": "6/16/2020 10:41:57",
+			"Type": "pftManifest",
+			"Path": "C:\\Users\\LINH\\Google Drive\\LaptopHP\\repos\\MASM-Anti-Debug\\",
+			"IsOpen": false,
+			"AssembleFile": false,
+			"ChildFileRCId": "",
+			"ChildFileASMId": "",
+			"ParentFileId": "",
+			"OutputFile": ""
+		},
+		{
+			"Id": "728FDC4A-E819-48F0-876E-E2BA467AE02F",
+			"Name": "Source.asm",
+			"Created": "6/16/2020 10:41:57",
+			"Type": "pftASM",
+			"Path": "C:\\Users\\LINH\\Google Drive\\LaptopHP\\repos\\MASM-Anti-Debug\\",
+			"IsOpen": true,
+			"AssembleFile": true,
+			"ChildFileRCId": "",
+			"ChildFileASMId": "",
+			"ParentFileId": "",
+			"OutputFile": "\"C:\\Users\\LINH\\Google Drive\\LaptopHP\\repos\\MASM-Anti-Debug\\Release\\Source.obj\""
+		},
+		{
+			"Id": "453FDF65-D77D-417C-8216-4881253EA184",
+			"Name": "Resource.rc",
+			"Created": "6/16/2020 10:41:57",
+			"Type": "pftRC",
+			"Path": "C:\\Users\\LINH\\Google Drive\\LaptopHP\\repos\\MASM-Anti-Debug\\",
+			"IsOpen": false,
+			"AssembleFile": true,
+			"ChildFileRCId": "",
+			"ChildFileASMId": "",
+			"ParentFileId": "",
+			"OutputFile": "\"C:\\Users\\LINH\\Google Drive\\LaptopHP\\repos\\MASM-Anti-Debug\\Release\\Resource.res\""
+		}
+	]
+}

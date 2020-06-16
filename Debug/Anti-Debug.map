@@ -1,0 +1,39 @@
+ Anti-Debug
+
+ Timestamp is 5ee86cad (Tue Jun 16 13:54:37 2020)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000005eH .text                   CODE
+ 0002:00000000 00000010H .idata$5                DATA
+ 0002:00000010 00000054H .rdata                  DATA
+ 0002:00000064 00000028H .idata$2                DATA
+ 0002:0000008c 00000014H .idata$3                DATA
+ 0002:000000a0 00000010H .idata$4                DATA
+ 0002:000000b0 00000036H .idata$6                DATA
+ 0002:000000e6 00000000H .edata                  DATA
+ 0003:00000000 00000017H .data                   DATA
+ 0004:00000000 00000058H .rsrc$01                DATA
+ 0004:00000060 000001a8H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:00000000       _Main@0                    00401000 f   Source.obj
+ 0001:00000000       _start                     00401000 f   Source.obj
+ 0001:00000036       _Flag@0                    00401036 f   Source.obj
+ 0001:00000052       _MessageBoxA@16            00401052 f   user32:user32.dll
+ 0001:00000058       _ExitProcess@4             00401058 f   kernel32:kernel32.dll
+ 0002:00000000       __imp__ExitProcess@4       00402000     kernel32:kernel32.dll
+ 0002:00000004       \177kernel32_NULL_THUNK_DATA 00402004     kernel32:kernel32.dll
+ 0002:00000008       __imp__MessageBoxA@16      00402008     user32:user32.dll
+ 0002:0000000c       \177user32_NULL_THUNK_DATA 0040200c     user32:user32.dll
+ 0002:00000064       __IMPORT_DESCRIPTOR_user32 00402064     user32:user32.dll
+ 0002:00000078       __IMPORT_DESCRIPTOR_kernel32 00402078     kernel32:kernel32.dll
+ 0002:0000008c       __NULL_IMPORT_DESCRIPTOR   0040208c     user32:user32.dll
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:0000002f       debugger_found             0040102f f   Source.obj
