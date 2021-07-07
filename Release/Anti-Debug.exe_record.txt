@@ -1,0 +1,14 @@
+06/11/2020 22:38:31 COUNT: 4 SIZE: 240
+06/11/2020 22:38:31   401000      1E0 .text
+06/11/2020 22:38:31   402000      120 .rdata
+06/11/2020 22:38:31   403000       4A .data
+06/11/2020 22:38:31   404000      208 .rsrc
+06/11/2020 22:38:31 [write] Target addr: 3ac068 (section: 255)
+06/11/2020 22:38:31 00000005 eip:00401015 cmp dword ptr ds:[ebx+0x68], 0x0
+06/11/2020 22:38:31 [branch] 7724dbd3 (section: 255) -> 40107a (section 0)
+06/11/2020 22:38:31 [branch] 772e331f (section: 255) -> 401089 (section 0)
+06/11/2020 22:38:33 [branch] 7724c56b (section: 255) -> 40109d (section 0)
+06/11/2020 22:38:33 [write] Target addr: 403030 (section: 2)
+06/11/2020 22:38:33 00005170 eip:777E2B6E cmp byte ptr ds:[eax+ebx*1], 0x0
+06/11/2020 22:38:33 [branch] 77635f35 (section: 255) -> 4010ad (section 0)
+06/11/2020 22:38:33 [branch] 2192e (section: 255) -> 4010c1 (section 0)

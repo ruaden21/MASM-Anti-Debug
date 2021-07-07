@@ -16,7 +16,7 @@
 		"PostLinkEventCommandLine": "",
 		"LibraryPath": "",
 		"OutputFolder": "C:\\Users\\LINH\\Google Drive\\LaptopHP\\repos\\MASM-Anti-Debug\\",
-		"OutputFile": "\"C:\\Users\\LINH\\Google Drive\\LaptopHP\\repos\\MASM-Anti-Debug\\Release\\Anti-Debug.exe\"",
+		"OutputFile": "",
 		"SizeInBytes": 3584,
 		"Build": true
 	},
@@ -45,7 +45,7 @@
 			"ChildFileRCId": "",
 			"ChildFileASMId": "",
 			"ParentFileId": "",
-			"OutputFile": "\"C:\\Users\\LINH\\Google Drive\\LaptopHP\\repos\\MASM-Anti-Debug\\Release\\Source.obj\""
+			"OutputFile": ""
 		},
 		{
 			"Id": "453FDF65-D77D-417C-8216-4881253EA184",
@@ -58,7 +58,7 @@
 			"ChildFileRCId": "",
 			"ChildFileASMId": "",
 			"ParentFileId": "",
-			"OutputFile": "\"C:\\Users\\LINH\\Google Drive\\LaptopHP\\repos\\MASM-Anti-Debug\\Release\\Resource.res\""
+			"OutputFile": ""
 		}
 	]
 }

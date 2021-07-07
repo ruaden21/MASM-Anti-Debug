@@ -17,6 +17,7 @@ Flag PROTO
 CheckDebugPort PROTO
 DebuggerInterrupts PROTO
 TimingChecks PROTO
+
   
 include c:\masm32\include\windows.inc
 include c:\masm32\include\user32.inc
@@ -39,6 +40,7 @@ includelib c:\masm32\lib\kernel32.lib
 
       szNtQueryInformationProcess db "NtQueryInformationProcess",0
       szNtDll db "ntdll.dll",0
+      szCsrGetProcessId db "CsrGetProcessId"
 ; *************************************************************************
 ; Our executable assembly code starts here in the .code section
 ; *************************************************************************
@@ -91,6 +93,13 @@ Main PROC
 	call TimingChecks
 	test eax,eax
 	jnz lb_debugger_found
+
+	;2.6. SeDebugPrivilege
+	;Do not work with x63dbg set privilege as administrator
+	call SeDebugPrivilege
+	test eax,eax
+	jnz lb_debugger_found
+
 
 
 	call Flag
@@ -253,6 +262,30 @@ TimingChecks PROC
 	mov eax,TRUE
 	ret
 TimingChecks ENDP
+
+SeDebugPrivilege PROC
+	LOCAL bDebuggerPresent:BOOL
+    LOCAL dwCsrId:DWORD,fnCsrGetProcessId:DWORD
+    LOCAL hNtDll:HANDLE
+    
+    ; NtQueryInformationProcess()
+    
+    invoke GetModuleHandle, ADDR szNtDll
+    mov  hNtDll,eax
+    invoke GetProcAddress, hNtDll, ADDR szCsrGetProcessId
+    mov fnCsrGetProcessId,eax
+    call fnCsrGetProcessId
+    mov dwCsrId,eax
+    
+    invoke OpenProcess, PROCESS_QUERY_INFORMATION, FALSE, dwCsrId
+	test eax,eax
+	jnz debugger_found
+	mov eax,FALSE
+	ret
+	debugger_found:
+	mov eax,TRUE
+	ret
+SeDebugPrivilege ENDP
 
 end start
 
